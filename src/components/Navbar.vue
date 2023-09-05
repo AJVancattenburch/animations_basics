@@ -257,10 +257,10 @@ export default {
   transform: perspective(1em) 
              rotateX(40deg) 
              scale(1, .35);
-} 
+}
 
 .my-links:hover .menu li:nth-child(3) a {
-  background-image: url(../assets/img/universe.png);
+  background-image: url(../assets/img/flight-training.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
