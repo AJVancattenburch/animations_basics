@@ -167,4 +167,30 @@ span {
   }
 }
 
+
+// Styling for the scrollbar
+
+::-webkit-scrollbar {
+  background-color: #2d288cc6;
+  width: .85rem;
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8b8b8b5f;
+  border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(32, 20, 12, 0.512);
+  border-radius: 0.25rem;
+  border-style: ridge;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #2d288c;
+  border-radius: 0.5rem;
+  border-style: groove;
+}
+
 </style>
