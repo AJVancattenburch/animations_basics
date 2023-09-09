@@ -1,8 +1,9 @@
 <template>
   <div class="container-fluid">
     <div class="row spanimate" style="height: 100vh;">
-      <div class="animate2 col-12 d-flex justify-content-center align-items-center">
+      <div class="col-12 d-flex justify-content-center align-items-center">
         <div class="animate">
+
         </div>
       </div>
     </div>
@@ -13,13 +14,12 @@
 .spanimate {
   height: 100vh;
   width: 100vw;
-  background-position: center;
   background-repeat: repeat;
   background-image: url(../assets/img/spaceman.jpg);
-  animation: spanScreen 20s ease-in-out infinite;
+  animation: panSpace 120s ease-in-out 3s infinite;
 }
 
-@keyframes spanScreen {
+@keyframes panSpace {
   0%, 100% {
     background-position: left top;
   }
@@ -33,4 +33,5 @@
     background-position: right top;
   }
 }
+
 </style>

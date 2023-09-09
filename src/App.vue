@@ -7,7 +7,7 @@
   </main>
   <footer class="container-fluid text-light g-0">
     <div class="bg-dark col-12">
-      Inspired by <span style="color: dodgerblue;">CodeWorks</span> showing this 🦚 how to fly!
+      Inspired by <span style="color: dodgerblue;">CodeWorks</span> for showing this 🦚 how to fly!
     </div>
  </footer>
 </template>
@@ -31,6 +31,20 @@ export default {
 <style lang="scss">
 @import "../src/assets/scss/variables.scss";
 
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+  background: 
+    linear-gradient(
+      90deg,
+        var(--bg-primary) 29%,
+        var(--bg-secondary) 61%,
+        var(--bg-tertiary) 86%
+    );
+  z-index: -1;
+  animation: fadeIn .5s ease-in-out forwards;
+}
+
 footer {
   display: flex;
   place-content: center;
@@ -38,16 +52,9 @@ footer {
   bottom: 0;
   width: 100%;
   z-index: 100;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   text-shadow: 2px 2px 2px #000000;
   text-align: center;
-
-    marquee {
-      font-size: 1.5em;
-      font-weight: bold;
-      text-shadow: 2px 2px 2px #000000;
-      text-align: center;
-    }
 }
 </style>

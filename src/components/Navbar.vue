@@ -103,6 +103,7 @@ export default {
   color: #faad61;
   text-shadow: 2px 2px 2px #777;
   transition: .24s .2s;
+  z-index: 1;
 
   &:hover {
     text-shadow: 1px 1px 1px var(--text-shadow);
@@ -403,10 +404,8 @@ export default {
 }
 
 .my-links:hover .menu li a:hover {
-  background: #ff5beb8a;
-  color: #191667;
   text-shadow: 1px 1px 1px aliceblue;
-  filter: drop-shadow(0 0 3px #ff5beb8a);
+  filter: brightness(1.5);
   transition: all .5s ease-in-out;
 }
 

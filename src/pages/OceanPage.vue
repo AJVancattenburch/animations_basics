@@ -1,6 +1,7 @@
 <template>
   <div class="container-fluid">
-    <div class="row bg-ocean">
+    <!-- NOTE - On a full background image, we make sure to use 'overflow: hidden' on the parent row to prevent the shark from overflowing the page with and causing scroll on the x and y axis -->
+    <div class="row bg-ocean" style="overflow: hidden;">
       <div class="col-12 d-flex justify-content-center align-items-center">
         <div class="shark-container">
           <img
@@ -27,14 +28,13 @@
   width: 50%;
   height: 50%;
   aspect-ratio: 1/1;
-  animation: attack 5s ease-in-out forwards;
+  animation: attack 5s ease-in-out infinite;
 }
 
 @keyframes attack {
   0% {
     position: relative;
-    transform: 
-      translateZ(1000px)
+    transform:
       translateX(-100%)
       translateY(100%)
       scale(0);
@@ -42,7 +42,6 @@
   }
   99% {
     transform:
-      translateZ(0)
       translateX(200%)
       translateY(0)
       scale(2);
@@ -50,7 +49,6 @@
   }
   100% {
     transform:
-    translateZ(0)
     translateX(250%)
     translateY(0)
     scale(0);
